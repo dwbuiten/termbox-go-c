@@ -41,9 +41,13 @@ package main
 #define TB_UNDERLINE 0x0200
 #define TB_EVENT_KEY 1
 #define TB_EVENT_RESIZE 2
+#define TB_KEY_PGUP (0xFFFF-16)
+#define TB_KEY_PGDN (0xFFFF-17)
 #define TB_KEY_ARROW_UP (0xFFFF-18)
 #define TB_KEY_ARROW_DOWN (0xFFFF-19)
+#define TB_KEY_BACKSPACE 0x08
 #define TB_KEY_SPACE 0x20
+#define TB_KEY_BACKSPACE2 0x7F
 
 struct tb_cell {
     uint32_t ch;
